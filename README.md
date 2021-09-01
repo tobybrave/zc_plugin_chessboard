@@ -1,45 +1,86 @@
 # Chess Board Room Plugin
 
-<img src="/images/chesspieces.jpg" alt="An image of chess pieces"/>
+<img src="https://raw.githubusercontent.com/eni4sure/zc_plugin_chessboard/2e0f029fb0c05eaea0206f46b17ce4722adca9df/images/chesspieces.jpg" alt="An image of chess pieces"/>
+
 Zuri chesss plugin is a web based recreational and competitive board game played between two players with an option for AI, that can easily be installed and used as part of the Zuri chat main application.
 
-## Design
+## Design:
 Figma link to the design implemented:
 <br>
  coming soon!
 
 ## Hosted URL:
-coming soon!
+https://chess.zuri.chat/
 
 ## Tech Stack:
  - React js
  - Nodejs
  - Ajax
  - WebSockets
- - MongoDB
 
-## Contribution Guide:
-1 - Go to Github and fork the Repo
+# Project Setup & Contribution Guide:
+ - Fork this REPO
+ - Clone the repo from your account
+ ``` 
+ git clone https://github.com/<username>/zc_plugin_chessboard.git
+ ```
 
-2 - Go to your github page and clone the forked repo
+#
+## For BACKEND
 
-3 - Create a project folder in your local machine
+ - switch to the backend directory and install all dependencies
+ ``` 
+ cd server 
+ npm install   or   yarn install  
+ ```
 
-4 - Navigate to it in the terminal. Run 'git clone(github link)'
+## For FRONTEND
 
-```http
-  git clone https://github.com/zurichat/zc_plugin_chessboard.git
+ - switch to the frontend directory and install all dependencies
+ ``` 
+ cd client 
+ npm install   or   yarn install 
+ ```
+#
+
+ - Add the main repo remote to your project upstream
+ ```
+ git remote add upstream https://github.com/zurichat/zc_plugin_chessboard.git
+ ```
+
+ - Pull from upstream
+ ```
+ git pull upstream dev
+ ```
+
+ - Switch to a new branch with your {feature-name}
+ ```
+ git checkout -b <feature-name>
+ ```
+
+ - Add your work/code
+
+ - When done making your changes, run
 ```
-5 - Create a branch for your Task 'git checkout -b 
-```http
-  git checkout -b {$yourBranchName}
-```
-6 - After changes - git add , - git commit m 'some comments' , - git push origin (name of your branch)
-```http
   git add .
-  git commit -m 'commit message'
-  git push origin {$yourBranchName}
+  git commit -m 'your commit message'
+  git push origin <feature-name>
 ```
 
-7 - Create a Pull Request
+ - Create a Pull Request to `` dev `` branch
 
+<br>
+
+  # For Local Testing:
+ - Run backend server
+ ```
+ cd server
+ npm run dev   or   yarn run dev
+ ```
+ - Open http://127.0.0.1:5050/ping
+ - Open another terminal in vscode and run
+ ```
+ cd client
+ npm start   or   yarn start
+ ```
+ - Open http://127.0.0.1:3000/

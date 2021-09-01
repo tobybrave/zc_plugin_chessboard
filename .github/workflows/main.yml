@@ -24,8 +24,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           script: |
             cd /var/www/zc_plugin_chessboard/
-            git pull
-            cd /var/www/zc_plugin_chessboard/plugin-chess-frontend
+            git pull origin main
+            cd server
             yarn install
             yarn build
-            pm2 restart chess_plugin
+            PM2_HOME=/opt/pm2/.pm2 pm2 restart index.js
